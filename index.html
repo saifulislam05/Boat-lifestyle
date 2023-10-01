@@ -35,14 +35,14 @@
 
 </head>
 
-<body>
+<body class="box-border">
     <!-- ---Top Announcement--- -->
     <p class="announcement text-center text-xs py-2 bg-[#EFF4F7] font-normal">Getting you the power of good sound. <span
             class="font-bold">boAtxMarvel</span> is Live. Grab Now!</p>
     <!-- --------Header section Starts form here -------  -->
-    <header class="nav-section ">
+    <header class="nav-section sticky top-0 !bg-white z-40 ">
         <div class=" mx-auto">
-            <nav class="px-4 flex items-center justify-between py-4">
+            <nav class="px-4 flex items-center justify-between py-4  ">
                 <!-- --logo side--- -->
                 <div class="left-side flex items-center md:grow xl:grow-0 xl:w-6/12 md:justify-between">
                     <div class="menu-bar text-xl mr-6 font-light lg:hidden">
@@ -99,15 +99,8 @@
                                 </div>
                             </a>
                         </div>
-
-
-
-
-
-
                     </div>
                 </div>
-
 
                 <!-- ---Right icons side --  -->
                 <div class="right-side flex items-center gap-3 md:grow md:justify-end">
@@ -158,30 +151,52 @@
 
                 </div>
             </nav>
+            <!-- -------- Search bar just for medium screen-------- -->
+            <div class="hidden md:flex lg:hidden !mb-4">
+                <div class="search-bar w-80 mx-auto  ">
+                    <div class="wrapper flex bg-[#EFF4F7] rounded-3xl px-4 w-full relative">
+                        <span class=" ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search w-6"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                <path d="M21 21l-6 -6" />
+                            </svg>
+                        </span>
+                        <input
+                            class="text-base b-0 outline-none bg-[#EFF4F7] text-black rounded-r-3xl px-2 grow w-full placeholder:text-black"
+                            type="text" placeholder="Search Speakers">
+                        <!-- <span class="absolute text-base top-2 left-11">Search <b>Speakers</b></span> -->
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <!-- --------Header section Ends here -------  -->
 
-    <!-- ------ Carousel Starts from here ---------- -->
+    <!-- I am adding my own carousel if you like you can use it or use your own -->
+
+    <!-- ------ Carousel Starts from here ---------- by saiful -->
     <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-            <img src="/assests/hero-carousel/Deadpool_Web_1_1440x.webp">
+            <img src="https://www.boat-lifestyle.com/cdn/shop/files/Lunar_Comet_WEB_1440x.jpg?v=1696054071">
         </div>
 
         <div class="mySlides fade">
-            <img src="assests/hero-carousel/Lunar_Comet_WEB_1440x.webp">
+            <img src="https://www.boat-lifestyle.com/cdn/shop/files/Deadpool_Web_1_1440x.jpg?v=1695626645">
         </div>
 
         <div class="mySlides fade">
-            <img src="assests/hero-carousel/Mirage_Desktop_1_1440x.webp">
+            <img src="https://www.boat-lifestyle.com/cdn/shop/files/Mirage_Desktop_1_1440x.png?v=1695735607">
         </div>
         <div class="mySlides fade">
-            <img src="assests/hero-carousel/Lunar_Prime_Desktop_1440x.webp">
+            <img src="https://www.boat-lifestyle.com/cdn/shop/files/Lunar_Prime_Desktop_1440x.png?v=1695881409">
         </div>
         <div class="mySlides fade">
-            <img src="assests/hero-carousel/Wave-Pro_2499_1440x.webp">
+            <img src="https://www.boat-lifestyle.com/cdn/shop/files/Wave-Pro_2499_1440x.jpg?v=1695391461">
         </div>
 
         <!-- Next and previous buttons -->
@@ -196,29 +211,179 @@
             <span class="dot" onclick="currentSlide(5)"></span>
         </div>
     </div>
-    <!-- ------ Carousel Ends here ---------- -->
-    <!-- --------Best sellers section starts from here---- -->
-    <section class="best-sellers">
+    <!-- ------ Carousel Ends here ----------by saiful -->
+    <!-- ------Shop By LifeStyle section Start from here -------->
+    <section class="shop-by-lifeStyle py-6">
         <div class="wrapper px-4">
-            <div class="section-heading">
-                <h3 class=""> Explore 
-                    <b>Bestsellers</b>
+            <!-- ---- Section Heading--- -->
+            <div class="section-heading mb-3">
+                <h3 class="text[#1A2024] text-2xl"> Shop by
+                    <b class="relative font-bold">LifeStyle</b>
                 </h3>
             </div>
-            <div class="products-types-wrapper">
-                <div class="product-type-card w-56 h-56 flex flex-col items-center ">
-                    <div class="media-box">
-                        <video preload="none" loop="true" playsinline="true" muted="true" class="svelte-jk0m5r" dataindex="Infinity" jsonkey="2CdZFaPewO" style="border-radius: 2px; object-fit: cover; object-position: center top; z-index: 1; border: 0px solid rgb(255, 255, 255); width: 100%; height: 100%;" src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_RUxbhR7CvjkNtlFUDxgw9.mp4" poster="https://www.boat-lifestyle.com/cdn/shop/files/quinn_N8V0FmOXVCG4QfYvPSp1w.jpg"></video>
-                    </div>
-                    <div class="type-text">
-                        <p class="">Smartwatches</p>
-                    </div>
+            <!-- ----Collecton cards ----- -->
+            <div class="collecton overflow-x-scroll ">
+                <div class="collection-cards-wrapper flex items-start flex-nowrap  w-fit">
+                    <!-- ----- Single collection card-1---- -->
+                    <a href="#" class="collection-card w-[313px] lg:w-[280px]">
+                        <div class=" flex flex-col items-center p-2 min-w-full">
+                            <div class="media-box w-full h-auto">
+                                <img class="min-w-full h-full"
+                                    src="https://www.boat-lifestyle.com/cdn/shop/files/Fitness2.png?v=1695374500"
+                                    alt="">
+                            </div>
+                            <div class="collection-info w-full pt-5 pb-3 text-center bg-[#eff4f7] rounded-b-xl">
+                                <p class="text-3xl font-bold tracking-[-1.12px] text-[#1a2024] mb-2">For Fitness</p>
+                                <div class="text-[#2f5b96] text-sm font-bold w-fit flex items-center mx-auto">
+                                    <span>View All</span>
+                                    <span class="right-arrow ml-1 inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14">
+                                            <path id="Path_337386" data-name="Path 337386"
+                                                d="M8.159,2.693a6.7,6.7,0,0,0,2.7-.551A7.172,7.172,0,0,0,13.095.625,7.133,7.133,0,0,0,14.608-1.6a6.735,6.735,0,0,0,.548-2.706,6.7,6.7,0,0,0-.551-2.7A7.216,7.216,0,0,0,13.087-9.25a7.041,7.041,0,0,0-2.234-1.513,6.781,6.781,0,0,0-2.7-.544,6.755,6.755,0,0,0-2.7.544A7.1,7.1,0,0,0,3.22-9.25,7.134,7.134,0,0,0,1.7-7.012a6.742,6.742,0,0,0-.548,2.7A6.7,6.7,0,0,0,1.706-1.6,7.184,7.184,0,0,0,3.223.625a7.184,7.184,0,0,0,2.23,1.517A6.7,6.7,0,0,0,8.159,2.693Zm0-1.283A5.609,5.609,0,0,1,5.932.968,5.741,5.741,0,0,1,4.109-.261,5.692,5.692,0,0,1,2.885-2.084a5.648,5.648,0,0,1-.44-2.226,5.648,5.648,0,0,1,.44-2.226A5.692,5.692,0,0,1,4.109-8.36,5.7,5.7,0,0,1,5.929-9.585a5.622,5.622,0,0,1,2.223-.44,5.675,5.675,0,0,1,2.23.44A5.681,5.681,0,0,1,12.208-8.36a5.692,5.692,0,0,1,1.225,1.823,5.648,5.648,0,0,1,.44,2.226,5.648,5.648,0,0,1-.44,2.226A5.692,5.692,0,0,1,12.208-.261,5.741,5.741,0,0,1,10.385.968,5.609,5.609,0,0,1,8.159,1.411Zm3.5-5.735a.637.637,0,0,0-.209-.44l-2.306-2.3a.541.541,0,0,0-.389-.144.5.5,0,0,0-.371.151.507.507,0,0,0-.148.367.526.526,0,0,0,.166.4l.843.821.793.648L8.62-4.887H5.183a.528.528,0,0,0-.4.162.557.557,0,0,0-.155.4.553.553,0,0,0,.155.4.535.535,0,0,0,.4.159H8.62l1.419-.058-.793.656L8.4-2.35a.5.5,0,0,0-.166.389.528.528,0,0,0,.148.378.491.491,0,0,0,.371.155.529.529,0,0,0,.389-.159l2.306-2.291A.627.627,0,0,0,11.661-4.325Z"
+                                                transform="translate(-1.155 11.307)" fill="#2f5b96"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- ----- Single collection card-2---- -->
+                    <a href="#" class="collection-card w-[313px] lg:w-[280px]">
+                        <div class="min-w-full flex flex-col items-center p-2">
+                            <div class="media-box w-full auto">
+                                <img class="min-w-full h-full"
+                                    src="https://www.boat-lifestyle.com/cdn/shop/files/Party_Animal_4.png?v=1685942349"
+                                    alt="">
+                            </div>
+                            <div class="collection-info w-full  pt-5 pb-3 text-center bg-[#eff4f7] rounded-b-xl">
+                                <p class="text-3xl font-bold tracking-[-1.12px] text-[#1a2024] mb-2">For Parties</p>
+                                <div class="text-[#2f5b96] text-sm font-bold w-fit flex items-center mx-auto">
+                                    <span>View All</span>
+                                    <span class="right-arrow ml-1 inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14">
+                                            <path id="Path_337386" data-name="Path 337386"
+                                                d="M8.159,2.693a6.7,6.7,0,0,0,2.7-.551A7.172,7.172,0,0,0,13.095.625,7.133,7.133,0,0,0,14.608-1.6a6.735,6.735,0,0,0,.548-2.706,6.7,6.7,0,0,0-.551-2.7A7.216,7.216,0,0,0,13.087-9.25a7.041,7.041,0,0,0-2.234-1.513,6.781,6.781,0,0,0-2.7-.544,6.755,6.755,0,0,0-2.7.544A7.1,7.1,0,0,0,3.22-9.25,7.134,7.134,0,0,0,1.7-7.012a6.742,6.742,0,0,0-.548,2.7A6.7,6.7,0,0,0,1.706-1.6,7.184,7.184,0,0,0,3.223.625a7.184,7.184,0,0,0,2.23,1.517A6.7,6.7,0,0,0,8.159,2.693Zm0-1.283A5.609,5.609,0,0,1,5.932.968,5.741,5.741,0,0,1,4.109-.261,5.692,5.692,0,0,1,2.885-2.084a5.648,5.648,0,0,1-.44-2.226,5.648,5.648,0,0,1,.44-2.226A5.692,5.692,0,0,1,4.109-8.36,5.7,5.7,0,0,1,5.929-9.585a5.622,5.622,0,0,1,2.223-.44,5.675,5.675,0,0,1,2.23.44A5.681,5.681,0,0,1,12.208-8.36a5.692,5.692,0,0,1,1.225,1.823,5.648,5.648,0,0,1,.44,2.226,5.648,5.648,0,0,1-.44,2.226A5.692,5.692,0,0,1,12.208-.261,5.741,5.741,0,0,1,10.385.968,5.609,5.609,0,0,1,8.159,1.411Zm3.5-5.735a.637.637,0,0,0-.209-.44l-2.306-2.3a.541.541,0,0,0-.389-.144.5.5,0,0,0-.371.151.507.507,0,0,0-.148.367.526.526,0,0,0,.166.4l.843.821.793.648L8.62-4.887H5.183a.528.528,0,0,0-.4.162.557.557,0,0,0-.155.4.553.553,0,0,0,.155.4.535.535,0,0,0,.4.159H8.62l1.419-.058-.793.656L8.4-2.35a.5.5,0,0,0-.166.389.528.528,0,0,0,.148.378.491.491,0,0,0,.371.155.529.529,0,0,0,.389-.159l2.306-2.291A.627.627,0,0,0,11.661-4.325Z"
+                                                transform="translate(-1.155 11.307)" fill="#2f5b96"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- ----- Single collection card-3---- -->
+                    <a href="#" class="collection-card w-[313px] lg:w-[280px]">
+                        <div class="min-w-full flex flex-col items-center p-2">
+                            <div class="media-box w-full">
+                                <img class="min-w-full h-full"
+                                    src="https://www.boat-lifestyle.com/cdn/shop/files/Workaholic_2.png?v=1685083745"
+                                    alt="">
+                            </div>
+                            <div class="collection-info w-full pt-5 pb-3 text-center bg-[#eff4f7] rounded-b-xl">
+                                <p class="text-3xl font-bold tracking-[-1.12px] text-[#1a2024] mb-2">For Work</p>
+                                <div class="text-[#2f5b96] text-sm font-bold w-fit flex items-center mx-auto">
+                                    <span>View All</span>
+                                    <span class="right-arrow ml-1 inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14">
+                                            <path id="Path_337386" data-name="Path 337386"
+                                                d="M8.159,2.693a6.7,6.7,0,0,0,2.7-.551A7.172,7.172,0,0,0,13.095.625,7.133,7.133,0,0,0,14.608-1.6a6.735,6.735,0,0,0,.548-2.706,6.7,6.7,0,0,0-.551-2.7A7.216,7.216,0,0,0,13.087-9.25a7.041,7.041,0,0,0-2.234-1.513,6.781,6.781,0,0,0-2.7-.544,6.755,6.755,0,0,0-2.7.544A7.1,7.1,0,0,0,3.22-9.25,7.134,7.134,0,0,0,1.7-7.012a6.742,6.742,0,0,0-.548,2.7A6.7,6.7,0,0,0,1.706-1.6,7.184,7.184,0,0,0,3.223.625a7.184,7.184,0,0,0,2.23,1.517A6.7,6.7,0,0,0,8.159,2.693Zm0-1.283A5.609,5.609,0,0,1,5.932.968,5.741,5.741,0,0,1,4.109-.261,5.692,5.692,0,0,1,2.885-2.084a5.648,5.648,0,0,1-.44-2.226,5.648,5.648,0,0,1,.44-2.226A5.692,5.692,0,0,1,4.109-8.36,5.7,5.7,0,0,1,5.929-9.585a5.622,5.622,0,0,1,2.223-.44,5.675,5.675,0,0,1,2.23.44A5.681,5.681,0,0,1,12.208-8.36a5.692,5.692,0,0,1,1.225,1.823,5.648,5.648,0,0,1,.44,2.226,5.648,5.648,0,0,1-.44,2.226A5.692,5.692,0,0,1,12.208-.261,5.741,5.741,0,0,1,10.385.968,5.609,5.609,0,0,1,8.159,1.411Zm3.5-5.735a.637.637,0,0,0-.209-.44l-2.306-2.3a.541.541,0,0,0-.389-.144.5.5,0,0,0-.371.151.507.507,0,0,0-.148.367.526.526,0,0,0,.166.4l.843.821.793.648L8.62-4.887H5.183a.528.528,0,0,0-.4.162.557.557,0,0,0-.155.4.553.553,0,0,0,.155.4.535.535,0,0,0,.4.159H8.62l1.419-.058-.793.656L8.4-2.35a.5.5,0,0,0-.166.389.528.528,0,0,0,.148.378.491.491,0,0,0,.371.155.529.529,0,0,0,.389-.159l2.306-2.291A.627.627,0,0,0,11.661-4.325Z"
+                                                transform="translate(-1.155 11.307)" fill="#2f5b96"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- ----- Single collection card-4---- -->
+                    <a href="#" class="collection-card w-[313px] lg:w-[280px]">
+                        <div class="min-w-full flex flex-col items-center p-2">
+                            <div class="media-box w-full">
+                                <img class="min-w-full h-full"
+                                    src="https://www.boat-lifestyle.com/cdn/shop/files/Entertainment_2.png?v=1685083746"
+                                    alt="">
+                            </div>
+                            <div class="collection-info w-full pt-5 pb-3 text-center bg-[#eff4f7] rounded-b-xl">
+                                <p class="text-3xl font-bold tracking-[-1.12px] text-[#1a2024] mb-2">For Entertainment
+                                </p>
+                                <div class="text-[#2f5b96] text-sm font-bold w-fit flex items-center mx-auto">
+                                    <span>View All</span>
+                                    <span class="right-arrow ml-1 inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14">
+                                            <path id="Path_337386" data-name="Path 337386"
+                                                d="M8.159,2.693a6.7,6.7,0,0,0,2.7-.551A7.172,7.172,0,0,0,13.095.625,7.133,7.133,0,0,0,14.608-1.6a6.735,6.735,0,0,0,.548-2.706,6.7,6.7,0,0,0-.551-2.7A7.216,7.216,0,0,0,13.087-9.25a7.041,7.041,0,0,0-2.234-1.513,6.781,6.781,0,0,0-2.7-.544,6.755,6.755,0,0,0-2.7.544A7.1,7.1,0,0,0,3.22-9.25,7.134,7.134,0,0,0,1.7-7.012a6.742,6.742,0,0,0-.548,2.7A6.7,6.7,0,0,0,1.706-1.6,7.184,7.184,0,0,0,3.223.625a7.184,7.184,0,0,0,2.23,1.517A6.7,6.7,0,0,0,8.159,2.693Zm0-1.283A5.609,5.609,0,0,1,5.932.968,5.741,5.741,0,0,1,4.109-.261,5.692,5.692,0,0,1,2.885-2.084a5.648,5.648,0,0,1-.44-2.226,5.648,5.648,0,0,1,.44-2.226A5.692,5.692,0,0,1,4.109-8.36,5.7,5.7,0,0,1,5.929-9.585a5.622,5.622,0,0,1,2.223-.44,5.675,5.675,0,0,1,2.23.44A5.681,5.681,0,0,1,12.208-8.36a5.692,5.692,0,0,1,1.225,1.823,5.648,5.648,0,0,1,.44,2.226,5.648,5.648,0,0,1-.44,2.226A5.692,5.692,0,0,1,12.208-.261,5.741,5.741,0,0,1,10.385.968,5.609,5.609,0,0,1,8.159,1.411Zm3.5-5.735a.637.637,0,0,0-.209-.44l-2.306-2.3a.541.541,0,0,0-.389-.144.5.5,0,0,0-.371.151.507.507,0,0,0-.148.367.526.526,0,0,0,.166.4l.843.821.793.648L8.62-4.887H5.183a.528.528,0,0,0-.4.162.557.557,0,0,0-.155.4.553.553,0,0,0,.155.4.535.535,0,0,0,.4.159H8.62l1.419-.058-.793.656L8.4-2.35a.5.5,0,0,0-.166.389.528.528,0,0,0,.148.378.491.491,0,0,0,.371.155.529.529,0,0,0,.389-.159l2.306-2.291A.627.627,0,0,0,11.661-4.325Z"
+                                                transform="translate(-1.155 11.307)" fill="#2f5b96"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- ----- Single collection card-5---- -->
+                    <a href="#" class="collection-card w-[313px] lg:w-[280px]">
+                        <div class="collection-card min-w-full flex flex-col items-center p-2">
+                            <div class="media-box w-full ">
+                                <img class="min-w-full h-full"
+                                    src="https://www.boat-lifestyle.com/cdn/shop/files/Audiophile_4x_ee6dfa87-48ae-4510-889e-c8d41d48010b.png?v=1694761655"
+                                    alt="">
+                            </div>
+                            <div class="collection-info w-full  pt-5 pb-3 text-center bg-[#eff4f7] rounded-b-xl">
+                                <p class="text-3xl font-bold tracking-[-1.12px] text-[#1a2024] mb-2">For Audiophiles</p>
+                                <div class="text-[#2f5b96] text-sm font-bold w-fit flex items-center mx-auto">
+                                    <span>View All</span>
+                                    <span class="right-arrow ml-1 inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14">
+                                            <path id="Path_337386" data-name="Path 337386"
+                                                d="M8.159,2.693a6.7,6.7,0,0,0,2.7-.551A7.172,7.172,0,0,0,13.095.625,7.133,7.133,0,0,0,14.608-1.6a6.735,6.735,0,0,0,.548-2.706,6.7,6.7,0,0,0-.551-2.7A7.216,7.216,0,0,0,13.087-9.25a7.041,7.041,0,0,0-2.234-1.513,6.781,6.781,0,0,0-2.7-.544,6.755,6.755,0,0,0-2.7.544A7.1,7.1,0,0,0,3.22-9.25,7.134,7.134,0,0,0,1.7-7.012a6.742,6.742,0,0,0-.548,2.7A6.7,6.7,0,0,0,1.706-1.6,7.184,7.184,0,0,0,3.223.625a7.184,7.184,0,0,0,2.23,1.517A6.7,6.7,0,0,0,8.159,2.693Zm0-1.283A5.609,5.609,0,0,1,5.932.968,5.741,5.741,0,0,1,4.109-.261,5.692,5.692,0,0,1,2.885-2.084a5.648,5.648,0,0,1-.44-2.226,5.648,5.648,0,0,1,.44-2.226A5.692,5.692,0,0,1,4.109-8.36,5.7,5.7,0,0,1,5.929-9.585a5.622,5.622,0,0,1,2.223-.44,5.675,5.675,0,0,1,2.23.44A5.681,5.681,0,0,1,12.208-8.36a5.692,5.692,0,0,1,1.225,1.823,5.648,5.648,0,0,1,.44,2.226,5.648,5.648,0,0,1-.44,2.226A5.692,5.692,0,0,1,12.208-.261,5.741,5.741,0,0,1,10.385.968,5.609,5.609,0,0,1,8.159,1.411Zm3.5-5.735a.637.637,0,0,0-.209-.44l-2.306-2.3a.541.541,0,0,0-.389-.144.5.5,0,0,0-.371.151.507.507,0,0,0-.148.367.526.526,0,0,0,.166.4l.843.821.793.648L8.62-4.887H5.183a.528.528,0,0,0-.4.162.557.557,0,0,0-.155.4.553.553,0,0,0,.155.4.535.535,0,0,0,.4.159H8.62l1.419-.058-.793.656L8.4-2.35a.5.5,0,0,0-.166.389.528.528,0,0,0,.148.378.491.491,0,0,0,.371.155.529.529,0,0,0,.389-.159l2.306-2.291A.627.627,0,0,0,11.661-4.325Z"
+                                                transform="translate(-1.155 11.307)" fill="#2f5b96"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+
             </div>
 
         </div>
     </section>
-    <!-- --------Best sellers section Ends here---- -->
+    <!-- ------Shop By LifeStyle section Ends here ------  -->
+
+    	<!------- Bottom Navbar for mobile----------- -->
+	<div class="w-full p-[10px] md:hidden bg-white shadow tracking-[-0.4px] text-bottom-nav-black">
+		<div class="flex justify-evenly">
+			<div class="flex flex-col items-center justify-between w-[59px] h-[47px]">
+				<img class="h-7 w-7" src="./assests/bottom-nav/home.svg" alt="home" />
+				<span class="text-[10px] flex flex-col items-center justify-center mt-1 font-bold">Home
+					<span class="inline-block bg-boat-red h-[2px] w-6 mt-[-2px]"></span>
+				</span>
+			</div>
+			<div class="flex flex-col items-center justify-between w-[59px] h-[47px]">
+				<img class="h-7 w-7" src="./assests/bottom-nav/deals.svg" alt="deals" />
+				<span class="text-[10px] font-medium flex flex-col items-center justify-center mt-1">Deals
+				</span>
+			</div>
+			<div class="flex flex-col items-center justify-between w-[59px] h-[47px]">
+				<img class="h-7 w-7" src="./assests/bottom-nav/categories.svg" alt="categories" />
+				<span class="text-[10px] font-medium flex flex-col items-center justify-center mt-1">Categories
+				</span>
+			</div>
+			<div class="flex flex-col items-center justify-between w-[59px] h-[47px]">
+				<img class="h-7 w-7" src="./assests/bottom-nav/login.svg" alt="login" />
+				<span class="text-[10px] font-medium flex flex-col items-center justify-center mt-1">Login
+				</span>
+			</div>
+			<div class="flex flex-col items-center justify-between w-[59px] h-[47px]">
+				<img class="h-7 w-7" src="./assests/bottom-nav/chat.svg" alt="chat" />
+				<span class="text-[10px] font-medium flex flex-col items-center justify-center mt-1">Chat
+				</span>
+			</div>
+		</div>
+	</div>
 
     <!-- -----carousel js file link ------  -->
     <script src="/Carousel/carousel.js"></script>

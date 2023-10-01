@@ -7,3 +7,14 @@
     -ms-transform: rotate(270deg);
     -o-transform: rotate(270deg);
 }
+
+.section-heading h3 b::after{
+        content: "";
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: #D83333;
+        position: absolute;
+        bottom: 0.5px;
+        right: 0;
+}
