@@ -18,3 +18,7 @@
         bottom: 0.5px;
         right: 0;
 }
+
+.section-heading h3 .blogs-heading::after{
+    width: 12px;
+}
