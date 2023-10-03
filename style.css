@@ -22,3 +22,14 @@
 .section-heading h3 .blogs-heading::after{
     width: 12px;
 }
+.privacy::after{
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 3px;
+    background: black;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -8px;
+}
