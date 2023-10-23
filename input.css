@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* make extras classes for no repeating codes */
+.details-card{
+	@apply flex rounded-xl relative p-1;
+}
+
+.badge{
+	@apply bg-black text-white top-2 absolute z-20 p-1 rounded font-bold;
+}
+
+.bg{
+	background-color: #fafafa;
+	border: 1px solid #ecf0f4;
+}
+
+.fea{
+	background-color: #eff4f7;
+}
+
+.sidebar{
+	z-index: 999;
+}
+
+.overlay{
+	z-index: 998;
+	background-color: rgba(0,0,0,0.4);
+}
+/* adding animation for timer */
+.time-container{
+	position: relative;
+	animation: move 1s linear infinite;
+   background: radial-gradient(circle at center, rgba(76, 75, 75, 0.2) 0%, rgba(251,197,10,1) 90%);
+}
+
+@keyframes move {
+	from { background-position: 0 0; }
+    to { background-position: 512px 512px; }
+}
+
+@layer base {
+	@font-face {
+		font-family: Metropolis;
+		src: url(./assets/font/Metropolis-Regular.woff2) format('woff2');
+		font-weight: 400;
+	}
+
+	@font-face {
+		font-family: Metropolis;
+		src: url(./assets/font/Metropolis-Medium.woff2) format('woff2');
+		font-weight: 500;
+	}
+
+	@font-face {
+		font-family: Metropolis;
+		src: url(./assets/font/Metropolis-Bold.woff2) format('woff2');
+		font-weight: 700;
+	}
+}
