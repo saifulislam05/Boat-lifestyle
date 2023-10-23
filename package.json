@@ -9,4 +9,3 @@
 		"minify": "npx tailwindcss -o style.css --minify"
 	}
 }
-

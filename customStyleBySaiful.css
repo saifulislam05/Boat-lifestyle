@@ -22,9 +22,11 @@
 .overflow-x-scroll::-webkit-scrollbar {
     width: 0.5em;
 }
+
 .overflow-x-scroll::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
+
 .privacy::after {
     position: absolute;
     content: '';

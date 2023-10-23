@@ -7,7 +7,7 @@ module.exports = {
 			fontFamily: {
 				metropolis: ['Metropolis', 'sans-serif'],
 			},
-			colors: { 
+			colors: {
 				announcement: '#eef4f7',
 				'boat-red': '#d83333',
 				'bottom-nav-black': '#1a2024',
@@ -35,7 +35,6 @@ module.exports = {
 			backgroundSize: {
 				'search-in-header': '18px',
 			},
-			
 			backgroundPosition: {
 				'search-in-header': '12px center',
 			},

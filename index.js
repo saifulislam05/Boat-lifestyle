@@ -14,7 +14,6 @@ blockP.forEach((block, index) => {
       expandCollIcon[index].innerText = "-";
     }
 
-    
     // Hide other visible .sub-block elements and reset their expand-collection-icon texts
     for (let i = 0; i < subBlock.length; i++) {
       if (i !== index && !subBlock[i].classList.contains("hidden")) {
