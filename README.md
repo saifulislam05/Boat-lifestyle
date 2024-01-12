@@ -2,6 +2,11 @@
 
 A responsive web app clone of boAt Lifestyle's E-commerce website, built using HTML, CSS, and JavaScript. This project replicates the sleek and trendy design of boAt's online store, providing a seamless user experience on various devices.
 
+## Demo
+
+Check out the live demo: [Live Demo](https://boat-clone-by-saiful.netlify.app/)
+
+
 ## Features
 
 - **Fully Responsive**: Seamless experience across devices.
@@ -20,10 +25,6 @@ A responsive web app clone of boAt Lifestyle's E-commerce website, built using H
 - TailwindCSS
 - Slick Carousel
 - ...
-
-## Demo
-
-Check out the live demo: [Live Demo](https://boat-clone-by-saiful.netlify.app/)
 
 
 
